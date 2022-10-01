@@ -1,0 +1,32 @@
+.NavHeader {
+    .header_top {
+        background-color: #fff;
+        text-align: right;
+    }
+
+    .header_bottom {
+        @height: 30px;
+        height: @height;
+        padding: 0 20px;
+        border-top: 1px solid #ccc;
+        background-color: #fff;
+
+        .pageTitle {
+            position: relative;
+            width: 80px;
+            text-align: center;
+            line-height: @height;
+            font-size: 16px;
+            &::after {
+                position: absolute;
+                content: '';
+                border-top: 12px solid #f60;
+                border-bottom: 12px solid transparent;
+                border-left: 12px solid transparent;
+                border-right: 12px solid transparent;
+                left: 50%;
+                transform: translate(-50%, 120%);
+            }
+        }
+    }
+}
