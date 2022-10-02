@@ -12,7 +12,7 @@ export default function NavHeader({ }: Props): ReactElement {
     return (
         <div className='NavHeader'> 
             <Header className='header_top' >
-                欢迎光临！{user}
+                欢迎光临1！{user}
                 <NavLink to={'/logout'}>退出</NavLink>
             </Header>
             <div className="header_bottom">
