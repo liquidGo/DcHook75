@@ -17,6 +17,7 @@ export default function Loading({ }: Props): ReactElement {
                     <Alert
                         type='info'
                         message='好好学习'
+                        
                         description='天天向上'
                     ></Alert>
                 </Spin>
