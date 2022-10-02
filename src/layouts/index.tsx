@@ -20,14 +20,13 @@ export default function index(props: any): ReactElement {
             >
                 <NavLeft />
             </Sider>
-            <Content>
+            <Content style={{maxHeight:'100vh',overflow:'scroll'}}>
                 <NavHeader />
                 {/* <NavHeader style={{ background: '#fff' }}>标题栏</NavHeader> */}
-                <Content style={{ border: '1px solid #ccc', minHeight: '60vh', margin: '12px' }}>
+                <Content style={{ minHeight: '60vh', margin: '12px' }}>
                     {props.children}
-                    
                 </Content>
-                <Footer>底部</Footer>
+                <Footer style={{ textAlign: 'center' }}>建议使用Chrome打开，备案信息：ShangHai</Footer>
             </Content>
         </Layout>
     )
