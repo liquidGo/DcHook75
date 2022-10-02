@@ -16,8 +16,7 @@ export default function Loading({ }: Props): ReactElement {
                 <Spin spinning={loading} delay={500} tip={'正在加载'}>
                     <Alert
                         type='info'
-                        message='好好学习'
-                        
+                        message='好好学习1'
                         description='天天向上'
                     ></Alert>
                 </Spin>
